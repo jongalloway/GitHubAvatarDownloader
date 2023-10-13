@@ -71,7 +71,11 @@ foreach (var c in allContributors)
     //Anything < 1.5KB is a gravatar or single color graphic
     if (imageBytes.Length > 1500)
     {
-        await File.WriteAllBytesAsync($"{directory}/{c.Login}.png", imageBytes);
+        // Only write if file doesn't exist, useful if re-running
+        if (!File.Exists($"{directory}/{c.Login}.png"))
+        {
+            await File.WriteAllBytesAsync($"{directory}/{c.Login}.png", imageBytes);
+        }
         avatarCount++;
     }
 }
