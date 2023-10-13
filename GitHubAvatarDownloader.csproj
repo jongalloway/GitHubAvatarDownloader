@@ -10,6 +10,8 @@
     <PackageReference Include="octokit" Version="8.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0-rc.2.23479.6" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0-rc.2.23479.6" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.3.0" />
+    <PackageReference Include="Spectre.Console" Version="0.47.0" />    
   </ItemGroup>
   <ItemGroup>
     <None Update="appSettings.json">
