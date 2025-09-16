@@ -1,0 +1,29 @@
+# Dependabot configuration for GitHubAvatarDownloader
+# This configuration enables weekly scanning and updates for NuGet packages
+
+version: 2
+updates:
+  # Enable updates for NuGet packages (.NET dependencies)
+  - package-ecosystem: "nuget"
+    # Files are in the repository root directory
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      # Run updates on Mondays
+      day: "monday"
+      # Run at 9:00 AM UTC
+      time: "09:00"
+    # Allow up to 5 open pull requests for NuGet updates
+    open-pull-requests-limit: 5
+    # Add labels to help identify Dependabot PRs
+    labels:
+      - "dependencies"
+      - "nuget"
+    # Group minor and patch updates together to reduce PR noise
+    groups:
+      nuget-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
