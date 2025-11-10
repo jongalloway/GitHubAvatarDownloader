@@ -10,7 +10,7 @@
     <PackageReference Include="octokit" Version="14.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.10" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.10" />
-    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.9.0" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.9.1" />
     <PackageReference Include="Spectre.Console" Version="0.53.0" />    
   </ItemGroup>
   <ItemGroup>
