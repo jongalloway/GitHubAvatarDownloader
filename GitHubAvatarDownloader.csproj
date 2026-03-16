@@ -8,9 +8,9 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="octokit" Version="14.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.13" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.13" />
-    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.10.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.14" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="14.10.4" />
     <PackageReference Include="Spectre.Console" Version="0.54.0" />    
   </ItemGroup>
   <ItemGroup>
